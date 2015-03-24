@@ -8,11 +8,9 @@ $this->pageTitle=Yii::app()->name;
 <hr />
 <?php
     //criar client soap
-    $client = new SoapClient("http://localhost/wsoap/index.php?r=webService/soapservice/");
+    $client = new SoapClient("http://localhost:8080/wsoap/webService/soapservice/");
 ?>
 <p>Testar Hello World em Webservice SOAP:</p>
-<a href="#" id="helloWorldSoap">Fazer Chamada</a>
-<br/><br/>
 <p>Resultado:</p>
 <div id="resultHelloWorldSoap">
     <?php
@@ -21,8 +19,6 @@ $this->pageTitle=Yii::app()->name;
 </div>
 <hr/>
 <p>Testar Calculadora em Webservice SOAP:</p>
-<a href="#" id="calculatorSoap">Fazer Chamada</a>
-<br/><br/>
 <p>Resultado:</p>
 <div id="resultCalculatorSoap">
     <?php
@@ -31,16 +27,14 @@ $this->pageTitle=Yii::app()->name;
 </div>
 <hr/>
 <p>Testar HelloWorld em Webservice REST:</p>
-<a href="#" id="helloWorldRest">Fazer Chamada</a>
-<br/><br/>
+
 <p>Resultado:</p>
-<div id="resultHelloWorldSoap">
+<div id="resultHelloWorldRest">
     <script>$(document).ready(function() { helloWorldRest();});</script>
 </div>
 <hr/>
 <p>Testar Calculadora em Webservice REST:</p>
-<a href="#" id="calculatorRest">Fazer Chamada</a>
-<br/><br/>
+
 <p>Resultado:</p>
 <div id="resultCalculatorRest">
     <script>$(document).ready(function() {calculatorRest();});</script>
@@ -50,10 +44,10 @@ $this->pageTitle=Yii::app()->name;
 <script type="text/javascript">
     function helloWorldRest() {
         $.ajax({
-            url:'http://localhost/wrest/webService/helloWorld',
+            url:'http://localhost:8080/wrest/webService/helloWorld',
             type:"GET",
             success:function(data) {
-                $('#resultHelloWorldSoap').html(data);
+                $('#resultHelloWorldRest').html(data);
               console.log(data);
             },
             error:function (xhr, ajaxOptions, thrownError){
@@ -65,7 +59,7 @@ $this->pageTitle=Yii::app()->name;
     function calculatorRest()    {
         var calcData = {"operation":"SUM", "num1":3, "num2":3};
         $.ajax({
-            url:'http://localhost/wrest/webService/calculator',
+            url:'http://localhost:8080/wrest/webService/calculator',
             type:"GET",
             data: calcData,
             success:function(data) {

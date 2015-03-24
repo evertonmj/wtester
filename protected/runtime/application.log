@@ -1,0 +1,105 @@
+2015/03/24 23:07:18 [error] [exception.SoapFault] SoapFault exception: [HTTP] Could not connect to host in /Applications/MAMP/htdocs/wtester/protected/views/site/index.php:17
+Stack trace:
+#0 [internal function]: SoapClient->__doRequest('<?xml version="...', 'http://localhos...', 'urn:WebServiceC...', 1, 0)
+#1 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->__call('helloWorld', Array)
+#2 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->helloWorld()
+#3 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#5 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Applications/MAMP/htdocs/wtester/protected/controllers/SiteController.php(32): CController->render('index')
+#8 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Applications/MAMP/htdocs/yii-1.1.15/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/wtester/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/wtester/
+---
+2015/03/24 23:07:26 [error] [exception.SoapFault] SoapFault exception: [HTTP] Could not connect to host in /Applications/MAMP/htdocs/wtester/protected/views/site/index.php:17
+Stack trace:
+#0 [internal function]: SoapClient->__doRequest('<?xml version="...', 'http://localhos...', 'urn:WebServiceC...', 1, 0)
+#1 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->__call('helloWorld', Array)
+#2 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->helloWorld()
+#3 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#5 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Applications/MAMP/htdocs/wtester/protected/controllers/SiteController.php(32): CController->render('index')
+#8 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Applications/MAMP/htdocs/yii-1.1.15/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/wtester/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/wtester/
+---
+2015/03/24 23:07:50 [error] [exception.SoapFault] SoapFault exception: [HTTP] Could not connect to host in /Applications/MAMP/htdocs/wtester/protected/views/site/index.php:17
+Stack trace:
+#0 [internal function]: SoapClient->__doRequest('<?xml version="...', 'http://localhos...', 'urn:WebServiceC...', 1, 0)
+#1 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->__call('helloWorld', Array)
+#2 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->helloWorld()
+#3 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#5 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Applications/MAMP/htdocs/wtester/protected/controllers/SiteController.php(32): CController->render('index')
+#8 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Applications/MAMP/htdocs/yii-1.1.15/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/wtester/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/wtester/
+---
+2015/03/24 23:08:14 [error] [exception.SoapFault] SoapFault exception: [HTTP] Could not connect to host in /Applications/MAMP/htdocs/wtester/protected/views/site/index.php:17
+Stack trace:
+#0 [internal function]: SoapClient->__doRequest('<?xml version="...', 'http://localhos...', 'urn:WebServiceC...', 1, 0)
+#1 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->__call('helloWorld', Array)
+#2 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->helloWorld()
+#3 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#5 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Applications/MAMP/htdocs/wtester/protected/controllers/SiteController.php(32): CController->render('index')
+#8 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Applications/MAMP/htdocs/yii-1.1.15/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/wtester/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/wtester/
+---
+2015/03/24 23:08:17 [error] [exception.SoapFault] SoapFault exception: [HTTP] Could not connect to host in /Applications/MAMP/htdocs/wtester/protected/views/site/index.php:17
+Stack trace:
+#0 [internal function]: SoapClient->__doRequest('<?xml version="...', 'http://localhos...', 'urn:WebServiceC...', 1, 0)
+#1 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->__call('helloWorld', Array)
+#2 /Applications/MAMP/htdocs/wtester/protected/views/site/index.php(17): SoapClient->helloWorld()
+#3 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#5 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Applications/MAMP/htdocs/wtester/protected/controllers/SiteController.php(32): CController->render('index')
+#8 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/MAMP/htdocs/yii-1.1.15/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Applications/MAMP/htdocs/yii-1.1.15/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/wtester/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/wtester/
+---
