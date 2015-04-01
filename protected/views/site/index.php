@@ -6,45 +6,67 @@ $this->pageTitle=Yii::app()->name;
 
 <h1>Testador de Web Services</h1>
 <hr />
-<?php
-    //criar client soap
-    $client = new SoapClient("http://localhost:8080/wsoap/webService/soapservice/");
-?>
+
 <p>Testar Hello World em Webservice SOAP:</p>
 <p>Resultado:</p>
 <div id="resultHelloWorldSoap">
-    <?php
-        echo $client->helloWorld();
-    ?>
 </div>
 <hr/>
 <p>Testar Calculadora em Webservice SOAP:</p>
 <p>Resultado:</p>
 <div id="resultCalculatorSoap">
-    <?php
-        echo $client->calculator("SUM", 2, 5);
-    ?>
 </div>
 <hr/>
 <p>Testar HelloWorld em Webservice REST:</p>
 
 <p>Resultado:</p>
 <div id="resultHelloWorldRest">
-    <script>$(document).ready(function() { helloWorldRest();});</script>
 </div>
 <hr/>
 <p>Testar Calculadora em Webservice REST:</p>
 
 <p>Resultado:</p>
 <div id="resultCalculatorRest">
-    <script>$(document).ready(function() {calculatorRest();});</script>
 </div>
 <hr/>
 
 <script type="text/javascript">
-    function helloWorldRest() {
+    $(document).ready(function(){
+        $.soap({
+            url: 'http://localhost/wsoap/webService/soapservice?ws=1',
+            method: 'helloWorld',
+
+            data: {
+            },
+
+            success: function (soapResponse) {
+                $('#resultHelloWorldSoap').text(soapResponse);
+            },
+            error: function (SOAPResponse) {
+                // show error
+            }
+        });
+
+        $.soap({
+            url: 'http://localhost/wsoap/webService/soapservice?ws=1',
+            method: 'calculator',
+
+            data: {
+                'operation': 'SUM',
+                'num1': 3,
+                'num2': 4
+            },
+
+            success: function (soapResponse) {
+                $('#resultCalculatorSoap').text(soapResponse);
+            },
+            error: function (SOAPResponse) {
+                // show error
+            }
+        });
+
         $.ajax({
-            url:'http://localhost:8080/wrest/webService/helloWorld',
+            url:'http://localhost/wrest/webService/helloWorld',
             type:"GET",
             success:function(data) {
                 $('#resultHelloWorldRest').html(data);
@@ -54,14 +76,11 @@ $this->pageTitle=Yii::app()->name;
               console.log(xhr.responseText);
             }
         });
-    }
 
-    function calculatorRest()    {
-        var calcData = {"operation":"SUM", "num1":3, "num2":3};
         $.ajax({
-            url:'http://localhost:8080/wrest/webService/calculator',
+            url:'http://localhost/wrest/webService/calculator',
             type:"GET",
-            data: calcData,
+            data: {"operation":"SUM", "num1":3, "num2":3},
             success:function(data) {
                 $('#resultCalculatorRest').html(data);
                 console.log(data);
@@ -70,5 +89,5 @@ $this->pageTitle=Yii::app()->name;
               console.log(xhr.responseText);
             }
         });
-    }
+    });
 </script>
